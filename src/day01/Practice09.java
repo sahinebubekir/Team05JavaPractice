@@ -1,5 +1,7 @@
 package day01;
 
+import java.util.Scanner;
+
 public class Practice09 {
     /*
      * Kullaniciya gunde kac cay ictigini ve kac seker kullandigini sorun.
@@ -13,4 +15,16 @@ public class Practice09 {
      *
      *
      */
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Gunde kac cay iciyorsunuz?");
+        int caySayisi = scan.nextInt();
+        System.out.println("Kac seker kullaniyorsunuz?");
+        double sekerSayisi = scan.nextDouble();
+
+        double sekerKiloYilda = (sekerSayisi * 1.7 * caySayisi * 365)/1000;
+        System.out.println("Yilda " + sekerKiloYilda + " kg seker kullaniyorsunuz");
+
+    }
 }
